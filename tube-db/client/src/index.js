@@ -8,11 +8,14 @@ import {
 
 // import HomePage from './pages/HomePage';
 import TopChannelsPage from './pages/TopChannelsPage';
-import 'antd/dist/antd.css';
 
+// import Trending videos from './pages/TrendingVideosPage';
+import TrendingVideosPage from './pages/TrendingVideosPage';
+
+import 'antd/dist/antd.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
-// import TrendingVideosPage from './pages/TrendingVideosPage';
+
 
 ReactDOM.render(
   <div>
@@ -28,11 +31,11 @@ ReactDOM.render(
 							render={() => (
 								<TopChannelsPage />
 							)}/>
-        {/* <Route exact
+        <Route exact
 							path="/trendingvideos"
 							render={() => (
 								<TrendingVideosPage />
-							)}/> */}
+							)}/>
       </Switch>
     </Router>
   </div>,
