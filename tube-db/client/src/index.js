@@ -21,11 +21,11 @@ ReactDOM.render(
   <div>
     <Router>
       <Switch>
-        {/* <Route exact
+        <Route exact
 							path="/"
 							render={() => (
 								<HomePage />
-							)}/> */}
+							)}/> 
         <Route exact
 							path="/topchannels"
 							render={() => (
