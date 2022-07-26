@@ -6,10 +6,13 @@ import {
 	Switch
 } from 'react-router-dom';
 
-// import HomePage from './pages/HomePage';
+// import home page ;
+import HomePage from './pages/HomePage';
+
+// import top channels ;
 import TopChannelsPage from './pages/TopChannelsPage';
 
-// import Trending videos from './pages/TrendingVideosPage';
+// import trending videos ;
 import TrendingVideosPage from './pages/TrendingVideosPage';
 
 import 'antd/dist/antd.css';
