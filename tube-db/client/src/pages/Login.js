@@ -23,6 +23,11 @@ function Login() {
 
   });
 
+  const handleSubmit = event => {
+    event.preventDefault();
+    alert('You have submitted the form.')
+  };
+
   // const handleFailure = (result) => {
 
   //   alert(result);
@@ -36,8 +41,23 @@ function Login() {
 
   return (
     <div className="Login">
+      <h2>Login Page</h2>
+      <form onSubmit={handleSubmit}>
+      <fieldset>
+         <label>
+           <p>Name</p>
+           <input name="Username" />
+         </label>
+       </fieldset>
+       <fieldset>
+         <label>
+           <p>Password</p>
+           <input name="Password" />
+         </label>
+       </fieldset>
+       <button type="submit">Submit</button>
+      </form>
       <LoginButton/>
-      <LogoutButton/>
     </div>
   );
 }
