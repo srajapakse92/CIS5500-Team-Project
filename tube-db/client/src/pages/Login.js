@@ -50,17 +50,17 @@ function Login() {
 
   return (
     <div class = "Login">
-      <h2>Login Page</h2>
+      <h2 class="white-text">Login Page</h2>
       <form onSubmit={handleSubmit}>
       <fieldset>
          <label>
-           <p>Name</p>
+           <h5 class="white-text">Name</h5>
            <input name="Username" onChange={setFormData} />
          </label>
        </fieldset>
        <fieldset>
          <label>
-           <p>Password</p>
+           <h5 class="white-text">Password</h5>
            <input name="Password" />
          </label>
        </fieldset>
