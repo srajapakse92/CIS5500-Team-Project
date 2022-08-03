@@ -50,6 +50,8 @@ function Login() {
 
   return (
     <div class = "Login">
+      <h2 class="white-text">CIS 550 Project: Bug Busters</h2>
+      <p class="white-text">(Derek Taylor, Zan Zhang, Sanjeeva Rajapakse, Angela Fan, Fred Qi)</p>
       <h2 class="white-text">Login Page</h2>
       <form onSubmit={handleSubmit}>
       <fieldset>
