@@ -1,15 +1,24 @@
 import './Login.css';
 import LoginButton from '../components/login';
-import LogoutButton from '../components/logout';
 import {gapi} from 'gapi-script';
-import { useEffect, useState } from 'react';
+import { useReducer, useEffect, useState } from 'react';
+import React from 'react';
+import image from '../images/whatsapp2.webp';
+
 
 const CLIENT_ID = "1034575332123-8tgla9079nd652nlfttj4lmub58up4ke.apps.googleusercontent.com"
 const API_KEY = "AIzaSyCrG2ljgMyqUl9JS-mdHwrKZbbGscficYo"
 
+const formReducer = (state, event) => {
+    return {
+      ...state,
+      [event.target.name]: event.target.value
+    }
+   }
+
 function Login() {
 
-  
+  const [formData, setFormData] = useReducer(formReducer, {});
 
   useEffect(() => {
     function start() {
@@ -40,13 +49,13 @@ function Login() {
   // };
 
   return (
-    <div className="Login">
+    <div class = "Login">
       <h2>Login Page</h2>
       <form onSubmit={handleSubmit}>
       <fieldset>
          <label>
            <p>Name</p>
-           <input name="Username" />
+           <input name="Username" onChange={setFormData} />
          </label>
        </fieldset>
        <fieldset>
