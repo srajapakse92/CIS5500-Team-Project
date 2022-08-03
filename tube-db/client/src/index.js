@@ -28,7 +28,7 @@ ReactDOM.render(
 								<HomePage />
 							)}/>
 		 <Route exact
-							path=""
+							path="/"
 							render={() => (
 								<Login />
 							)}/>
