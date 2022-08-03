@@ -15,6 +15,7 @@ import VideoPage from './pages/VideoPage';
 import 'antd/dist/antd.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
+import Login from './pages/Login';
 
 
 ReactDOM.render(
@@ -27,9 +28,9 @@ ReactDOM.render(
 								<HomePage />
 							)}/>
 		 <Route exact
-							path="/hello"
+							path=""
 							render={() => (
-								<HomePage />
+								<Login />
 							)}/>
 		<Route exact
 							path="/video"
