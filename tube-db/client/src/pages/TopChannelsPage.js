@@ -261,7 +261,6 @@ class TopChannelsPage extends React.Component {
 
                                 <Row>
                                     <Col span={6}>
-
                                         <Row>
                                             <Col span={8}>
                                                 <p className='titleSearchName'>Rank: </p>
@@ -270,9 +269,6 @@ class TopChannelsPage extends React.Component {
                                                 <Slider tipFormatter={numFormatter} range defaultValue={[1, 10000]} min={1} max={10000}/>
                                             </Col>
                                         </Row>
-
-
-
                                     </Col>
 
                                     <Col span={6}>

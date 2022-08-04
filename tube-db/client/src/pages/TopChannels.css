@@ -46,7 +46,7 @@ div.page{
 }
 
 Table{
-    background-image: linear-gradient(to bottom,#cacaca, #fafafa);
+    background-image: linear-gradient(to bottom,#fafafa, #cacaca);
     border: 4px solid rgb(138, 138, 138);
     /* width:1000px; */
 }
